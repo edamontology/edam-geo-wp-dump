@@ -8,15 +8,14 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
-     xmlns:edam="http://purl.obolibrary.org/obo/edam#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <edamontology:next_id>4020</edamontology:next_id>
-        <obo:date>16.08.2021 13:44 UTC</obo:date>
+        <edamontology:next_id>4039</edamontology:next_id>
+        <obo:date>08.03.2023 17:20 UTC</obo:date>
         <obo:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</obo:idspace>
         <obo:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</obo:idspace>
         <obo:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</obo:idspace>
@@ -24,7 +23,6 @@
         <obo:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</obo:idspace>
         <obo:remark>EDAM editors: Jon Ison, Matúš Kalaš, Hervé Ménager, and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</obo:remark>
         <obo:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</obo:remark>
-        <edam:repository rdf:resource="https://github.com/edamontology/edamontology/"/>
         <dc:contributor>Veit Schwämmle</dc:contributor>
         <dc:creator>Hervé Ménager</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
@@ -44,6 +42,7 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
+        <edamontology:repository rdf:resource="https://github.com/edamontology/edamontology/"/>
     </owl:Ontology>
     
 
@@ -336,26 +335,6 @@
     
 
 
-    <!-- http://edamontology.org/topic_wp_geo_temporary_014 -->
-
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/topic_wp_geo_temporary_014">
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-25T00:06:30.711467Z</oboInOwl:creation_date>
-        <rdfs:label>vurdering</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://edamontology.org/topic_wp_geo_temporary_015 -->
-
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/topic_wp_geo_temporary_015">
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-25T00:07:08.79107Z</oboInOwl:creation_date>
-        <rdfs:label>dev:zero</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/date"/>
@@ -463,20 +442,6 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/edam#operations">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/edam#placeholder -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/edam#placeholder">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/edam#repository -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/edam#repository"/>
     
 
 
@@ -1103,26 +1068,6 @@
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-22T18:56:11.224295Z</oboInOwl:creation_date>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bogus:related</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://edamontology.org/topic_wp_geo_temporary_012 -->
-
-    <owl:ObjectProperty rdf:about="http://edamontology.org/topic_wp_geo_temporary_012">
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-24T23:45:48.588857Z</oboInOwl:creation_date>
-        <rdfs:label>humzava</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://edamontology.org/topic_wp_geo_temporary_013 -->
-
-    <owl:ObjectProperty rdf:about="http://edamontology.org/topic_wp_geo_temporary_013">
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-24T23:46:29.011651Z</oboInOwl:creation_date>
-        <rdfs:label>dev:null</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -25892,11 +25837,11 @@
     
 
 
-    <!-- http://edamontology.org/data_wp_TEMPLATE -->
+    <!-- http://edamontology.org/data_wp_template -->
 
-    <owl:Class rdf:about="http://edamontology.org/data_wp_TEMPLATE">
+    <owl:Class rdf:about="http://edamontology.org/data_wp_template">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/wp_concept_TEMPLATE"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/wp_concept_template"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-24T09:45:21.41427Z</oboInOwl:creation_date>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{Data TEMPLATE}</rdfs:label>
@@ -38683,11 +38628,11 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     
 
 
-    <!-- http://edamontology.org/format_wp_TEMPLATE -->
+    <!-- http://edamontology.org/format_wp_template -->
 
-    <owl:Class rdf:about="http://edamontology.org/format_wp_TEMPLATE">
+    <owl:Class rdf:about="http://edamontology.org/format_wp_template">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/wp_concept_TEMPLATE"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/wp_concept_template"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-24T09:45:21.41427Z</oboInOwl:creation_date>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{Format TEMPLATE}</rdfs:label>
@@ -52897,7 +52842,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/operation_3903">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0420"/>
         <edamontology:created_in>1.22</edamontology:created_in>
-        <edam:edam></edam:edam>
         <oboInOwl:hasDefinition>Predict or detect DNA-binding sites in protein sequences.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein-DNA binding site detection</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein-DNA binding site prediction</oboInOwl:hasExactSynonym>
@@ -53728,21 +53672,21 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     
 
 
-    <!-- http://edamontology.org/operation_wp_TEMPLATE -->
+    <!-- http://edamontology.org/operation_wp_template -->
 
-    <owl:Class rdf:about="http://edamontology.org/operation_wp_TEMPLATE">
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_template">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/wp_concept_TEMPLATE"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/wp_concept_template"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_wp_TEMPLATE"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_wp_template"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_wp_TEMPLATE"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_wp_template"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A related search term with a different scope</edamontology:related_term>
@@ -62496,6 +62440,153 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:label>Biosciences</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/List_of_life_sciences"/>
     </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4020 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4020">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
+        <edamontology:created_in>1.26</edamontology:created_in>
+        <oboInOwl:hasDefinition>The carbon cycle is the biogeochemical pathway of carbon moving through the different parts of the Earth (such as ocean, atmosphere, soil), or eventually another planet.</oboInOwl:hasDefinition>
+        <oboInOwl:hasBroadSynonym>Biogeochemical cycle</oboInOwl:hasBroadSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Carbon cycle</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Carbon_cycle"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biogeochemical_cycle"/>
+        <rdfs:comment>Note that the carbon-nitrogen-oxygen (CNO) cycle (https://en.wikipedia.org/wiki/CNO_cycle) is a completely different, thermonuclear reaction in stars.</rdfs:comment>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4021 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4021">
+        <edamontology:created_in>1.26</edamontology:created_in>
+        <rdfs:label>Multiomics</rdfs:label>
+        <oboInOwl:hasExactSynonym>Panomics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Pan-omics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Integrative omics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Multi-omics</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Multiomics concerns integration of data from multiple omics (e.g. transcriptomics, proteomics, epigenomics).</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiomics"/>
+        <rdfs:seeAlso rdf:resource="http://edamontology.org/topic_3366"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4027 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4027">
+        <edamontology:created_in>1.26</edamontology:created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3308"/>
+        <rdfs:label>Ribosome Profiling</rdfs:label>
+        <oboInOwl:hasExactSynonym>RIBO-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ribo-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>RiboSeq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Ribo-Seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ribosomal footprinting</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>translation footprinting</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>With ribosome profiling, ribosome-protected mRNA fragments are analyzed with RNA-seq techniques leading to a genome-wide measurement of the translation landscape.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ribosome_profiling"/>
+    </owl:Class>
+
+
+
+	   <!-- http://edamontology.org/topic_4028 -->
+	
+	<owl:Class rdf:about="http://edamontology.org/topic_4028">
+        <edamontology:created_in>1.26</edamontology:created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <rdfs:label>Single-Cell Sequencing</rdfs:label>
+        <oboInOwl:hasNarrowSynonym>Single Cell Genomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Combined with NGS (Next Generation Sequencing) technologies, single-cell sequencing allows the study of genetic information (DNA, RNA, epigenome...) at a single cell level. It is often used for differential analysis and gene expression profiling.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Single-cell_analysis"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Single_cell_sequencing"/>
+    </owl:Class>
+
+
+	
+    <!-- http://edamontology.org/topic_4029 -->
+	
+	<owl:Class rdf:about="http://edamontology.org/topic_4029">
+        <edamontology:created_in>1.26</edamontology:created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
+        <rdfs:label>Acoustics</rdfs:label>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>The study of mechanical waves in liquids, solids, and gases.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Acoustics"/>
+    </owl:Class>
+
+	    <!-- http://edamontology.org/topic_4030 -->
+	
+	<owl:Class rdf:about="http://edamontology.org/topic_4030">
+        <edamontology:created_in>1.26</edamontology:created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3292"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <rdfs:label>Microfluidics</rdfs:label>
+		<oboInOwl:hasNarrowSynonym>Fluidics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Interdisplinary study of behavior, precise control, and manipulation of low (microlitre) volume fluids in constrained space.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Microfluidics"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4037 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4037">
+        <edamontology:created_in>1.26</edamontology:created_in>
+        <rdfs:label>Genomic imprinting</rdfs:label>
+        <oboInOwl:hasExactSynonym>Gene imprinting</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Genomic imprinting is a gene regulation mechanism by which a subset of genes are expressed from one of the two parental chromosomes only. Imprinted genes are organized in clusters, their silencing/activation of the imprinted loci involves epigenetic marks (DNA methylation, etc) and so-called imprinting control regions (ICR). It has been described in mammals, but also plants and insects.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3295"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genomic_imprinting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4038 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4038">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3697"/>
+        <edamontology:created_in>1.26</edamontology:created_in>
+        <edamontology:related_term>Environmental DNA (eDNA)</edamontology:related_term>
+        <edamontology:related_term>Environmental RNA (eRNA)</edamontology:related_term>
+        <edamontology:related_term>Environmental sequencing</edamontology:related_term>
+        <edamontology:related_term>Taxonomic profiling</edamontology:related_term>
+        <oboInOwl:hasDefinition>Metabarcoding is the barcoding of (environmental) DNA or RNA to identify multiple taxa from the same sample.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>DNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Environmental metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>RNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>eDNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>eRNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>Typically, high-throughput sequencing is performed and the resulting sequence reads are matched to DNA barcodes in a reference database.</rdfs:comment>
+        <rdfs:label>Metabarcoding</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Environmental_DNA"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metabarcoding"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q51237016"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q25098939"/>
+        <skos:related rdf:resource="http://edamontology.org/topic_3923"/>
+    </owl:Class>
     
 
 
@@ -64031,11 +64122,11 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
     
 
 
-    <!-- http://edamontology.org/topic_wp_TEMPLATE -->
+    <!-- http://edamontology.org/topic_wp_template -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_wp_TEMPLATE">
+    <owl:Class rdf:about="http://edamontology.org/topic_wp_template">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/wp_concept_TEMPLATE"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/wp_concept_template"/>
         <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A related search term with a different scope</edamontology:related_term>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-24T09:45:21.41427Z</oboInOwl:creation_date>
@@ -64202,13 +64293,13 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/topic_wp_geo_temporary_012"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_wp_TEMPLATE"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_wp_template"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/topic_wp_geo_temporary_013"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/wp_concept_TEMPLATE"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/wp_concept_template"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <edamontology:topic_wp_geo_temporary_014 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AN INSANE TEST</edamontology:topic_wp_geo_temporary_014>
@@ -65500,9 +65591,9 @@ Note: the term perceptron is used other ways as a supervised learning algorithm,
     
 
 
-    <!-- http://edamontology.org/wp_concept_TEMPLATE -->
+    <!-- http://edamontology.org/wp_concept_template -->
 
-    <owl:Class rdf:about="http://edamontology.org/wp_concept_TEMPLATE">
+    <owl:Class rdf:about="http://edamontology.org/wp_concept_template">
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-24T09:45:21.41427Z</oboInOwl:creation_date>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{TEMPLATE concept, generic}</rdfs:label>
@@ -65510,10 +65601,10 @@ Note: the term perceptron is used other ways as a supervised learning algorithm,
     
 
 
-    <!-- http://edamontology.org/wp_obsolete_concept_TEMPLATE -->
+    <!-- http://edamontology.org/wp_obsolete_concept_template -->
 
-    <owl:Class rdf:about="http://edamontology.org/wp_obsolete_concept_TEMPLATE">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/wp_concept_TEMPLATE"/>
+    <owl:Class rdf:about="http://edamontology.org/wp_obsolete_concept_template">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/wp_concept_template"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-24T09:45:21.41427Z</oboInOwl:creation_date>
