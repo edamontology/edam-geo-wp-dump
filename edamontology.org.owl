@@ -62557,7 +62557,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3923"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/operation_3923"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <edamontology:created_in>1.26</edamontology:created_in>
@@ -65509,32 +65509,6 @@ Note: the term perceptron is used other ways as a supervised learning algorithm,
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Replication_crisis"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reproducibility"/>
         <skos:editorialNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO. Check also definitions and discussions linked from https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html</skos:editorialNote>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/topic_wp_geo_temporary_085 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_085">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3697"/>
-        <edamontology:created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</edamontology:created_in>
-        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental DNA (eDNA)</edamontology:related_term>
-        <edamontology:related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental RNA (eRNA)</edamontology:related_term>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš, Peter Woollard (https://github.com/Woolly-at-EBI), https://github.com/edamontology/edamontology/issues/856</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-08T15:00:28.034773Z</oboInOwl:creation_date>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metabarcoding is the barcoding of (environmental) DNA or RNA to identify multiple taxa from the same sample.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA metabarcoding</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental metabarcoding</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA metabarcoding</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eDNA metabarcoding</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eRNA metabarcoding</oboInOwl:hasNarrowSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Typically, high-throughput sequencing is performed and the resulting sequence reads are matched to DNA barcodes in a reference database.</rdfs:comment>
-        <rdfs:label>Metabarcoding</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Environmental_DNA"/>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metabarcoding"/>
-        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q51237016"/>
-        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q25098939"/>
     </owl:Class>
     
 
