@@ -336,18 +336,6 @@
     
 
 
-    <!-- http://edamontology.org/topic_wp_geo_temporary_014 -->
-
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/topic_wp_geo_temporary_014"/>
-    
-
-
-    <!-- http://edamontology.org/topic_wp_geo_temporary_015 -->
-
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/topic_wp_geo_temporary_015"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/date"/>
@@ -607,12 +595,6 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#savedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#savedBy"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
     
 
 
@@ -1072,28 +1054,6 @@
         <owl:annotatedTarget>true</owl:annotatedTarget>
         <rdfs:comment>In very unusual cases.</rdfs:comment>
     </owl:Axiom>
-    
-
-
-    <!-- http://edamontology.org/topic_webprotege_081 -->
-
-    <owl:ObjectProperty rdf:about="http://edamontology.org/topic_webprotege_081">
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-22T18:56:11.224295Z</oboInOwl:creation_date>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bogus:related</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://edamontology.org/topic_wp_geo_temporary_012 -->
-
-    <owl:ObjectProperty rdf:about="http://edamontology.org/topic_wp_geo_temporary_012"/>
-    
-
-
-    <!-- http://edamontology.org/topic_wp_geo_temporary_013 -->
-
-    <owl:ObjectProperty rdf:about="http://edamontology.org/topic_wp_geo_temporary_013"/>
     
 
 
@@ -32278,7 +32238,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -32317,7 +32277,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -32812,7 +32772,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3776"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -34829,7 +34789,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/operation_webprotege_015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -35386,7 +35346,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3617"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -35776,7 +35736,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3164"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -36502,7 +36462,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/operation_webprotege_015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -54060,13 +54020,13 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3299"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3050"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_webprotege_079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -54177,7 +54137,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Bioinformatics"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_biology"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D016247</rdfs:seeAlso>
-        <skos:altLabel>Computational biology</skos:altLabel>
+        <oboInOwl:hasExactSynonym>Computational biology</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -55210,7 +55170,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3293"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_webprotege_080"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -57256,7 +57216,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:label>Cheminformatics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cheminformatics"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_chemistry"/>
-        <skos:altLabel>Computational chemistry</skos:altLabel>
+        <oboInOwl:hasExactSynonym>Computational chemistry</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -59960,7 +59920,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3376"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_webprotege_076"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -62594,6 +62554,31 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
     <owl:Class rdf:about="http://edamontology.org/topic_4038">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3697"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3923"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <edamontology:created_in>1.26</edamontology:created_in>
+        <edamontology:related_term>Environmental DNA (eDNA)</edamontology:related_term>
+        <edamontology:related_term>Environmental RNA (eRNA)</edamontology:related_term>
+        <edamontology:related_term>Environmental sequencing</edamontology:related_term>
+        <edamontology:related_term>Taxonomic profiling</edamontology:related_term>
+        <oboInOwl:hasDefinition>Metabarcoding is the barcoding of (environmental) DNA or RNA to identify multiple taxa from the same sample.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>DNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Environmental metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>RNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>eDNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>eRNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>Typically, high-throughput sequencing is performed and the resulting sequence reads are matched to DNA barcodes in a reference database.</rdfs:comment>
+        <rdfs:label>Metabarcoding</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Environmental_DNA"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metabarcoding"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q51237016"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q25098939"/>
     </owl:Class>
     
 
@@ -63675,7 +63660,7 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3050"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0194"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -63754,7 +63739,7 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3377"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_webprotege_076"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -63837,7 +63822,7 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_webprotege_081"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3304"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -64271,28 +64256,10 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3372"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_wp_geo_temporary_016"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_wp_geo_temporary_012"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_wp_template"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/topic_wp_geo_temporary_013"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/wp_concept_template"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <edamontology:topic_wp_geo_temporary_014 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AN INSANE TEST</edamontology:topic_wp_geo_temporary_014>
-        <edamontology:topic_wp_geo_temporary_015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ULTIMATE TEST</edamontology:topic_wp_geo_temporary_015>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-09T11:13:21.41427Z</oboInOwl:creation_date>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JUST A TEST</oboInOwl:hasBroadSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOTE: looks like SKOS definition sorts better</rdfs:comment>
         <rdfs:label>Version control</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Version_control"/>
-        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: should we use SKOS definition instead of hasDefinition?</skos:definition>
-        <skos:editorialNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HERE A TEST: See the order of definiiton etc.</skos:editorialNote>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q189439"/>
     </owl:Class>
     
