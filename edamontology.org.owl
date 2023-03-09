@@ -29,8 +29,8 @@
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:format>application/rdf+xml</dc:format>
 		<dcterms:format rdf:resource="http://www.iana.org/assignments/media-types/application/rdf+xml"/>
-        <has_format rdf:resource="http://edamontology.org/format_3261"/>
-        <has_format rdf:resource="http://edamontology.org/format_2197"/>
+        <!--<has_format rdf:resource="http://edamontology.org/format_3261"/>
+        <has_format rdf:resource="http://edamontology.org/format_2197"/>-->
         <dc:title>EDAM - The ontology of data analysis and management</dc:title>
         <dc:description>EDAM is a domain ontology of data analysis and data management in bio- and other sciences, and science-based applications. It comprises concepts related to analysis, modelling, optimisation, and data life-cycle. Targetting usability by diverse users, the structure of EDAM is relatively simple, divided into 4 main sections: Topic, Operation, Data (incl. Identifier), and Format.</dc:description>
         <doap:Version>1.26_dev</doap:Version>
@@ -414,6 +414,14 @@
     <!-- http://edamontology.org/bio -->
 
     <owl:AnnotationProperty rdf:about="http://edamontology.org/bio">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://edamontology.org/geo -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/geo">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
