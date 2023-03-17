@@ -18,7 +18,7 @@
         <citation rdf:resource="https://doi.org/10.7490/f1000research.1118900.1"/>
         <next_id>4039</next_id>
         <repository rdf:resource="https://github.com/edamontology/edamontology"/>
-        <oboLegacy:date>17.03.2023 15:18 UTC</oboLegacy:date>
+        <oboLegacy:date>17.03.2023 17:04 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -64245,8 +64245,8 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(HEP not only elementary particles, but also heavy ions (https://de.wikipedia.org/wiki/Schwerion) acc. to DE Wikipedia. Exact synonyms acc. to EN Wikipedia and Wikidata.)</rdfs:comment>
         <rdfs:label>Particle physics</rdfs:label>
         <rdfs:label xml:lang="de">Teilchenphysik</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://de.wikipedia.org/wiki/Hochenergiephysik"/>
-        <rdfs:seeAlso rdf:resource="https://de.wikipedia.org/wiki/Teilchenphysik"/>
+        <rdfs:seeAlso rdf:resource="https://de.wikipedia.org/wiki/Hochenergiephysik" xml:lang="de"/>
+        <rdfs:seeAlso rdf:resource="https://de.wikipedia.org/wiki/Teilchenphysik" xml:lang="de"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Particle_physics"/>
         <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q350265"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q18334"/>
