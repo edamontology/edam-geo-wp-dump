@@ -25875,6 +25875,44 @@
     
 
 
+    <!-- http://edamontology.org/data_wp_geo_temporary_002 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_wp_geo_temporary_002">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_wp_geo_temporary_001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_format"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_format"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3261"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_format"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3749"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bianchini</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-06T15:32:37.480761Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A standard for DMPs developed by the Research Data Alliance</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maDMP</oboInOwl:hasExactSynonym>
+        <rdfs:label>Machine-actionable DMP</rdfs:label>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.6e60e5"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/data_wp_template -->
 
     <owl:Class rdf:about="http://edamontology.org/data_wp_template">
@@ -53775,38 +53813,141 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <!-- http://edamontology.org/operation_wp_geo_temporary_009 -->
 
-    <owl:Class rdf:about="http://edamontology.org/data_wp_geo_temporary_002">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_wp_geo_temporary_001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_format"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3255"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_format"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3261"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_format"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/format_3749"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3071"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bianchini</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-06T15:32:37.480761Z</oboInOwl:creation_date>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A standard for DMPs developed by the Research Data Alliance</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maDMP</oboInOwl:hasExactSynonym>
-        <rdfs:label>Machine-actionable DMP</rdfs:label>
-        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.6e60e5"/>
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_009">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2409"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-27T10:14:48.086993Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data communication</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data migration</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Move or transmit data between locations or devices.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data transmission</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transmission</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Data synchronisation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym xml:lang="en-us">Data synchronization</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data syncing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data exchange</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data sharing</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data transfer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_communication"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_exchange"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_migration"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_sharing"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_synchronization"/>
+        <skos:broadMatch rdf:resource="https://www.wikidata.org/wiki/Q1932543"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q1172338"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q5227350"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q389772"/>
+        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q1172333"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_wp_geo_temporary_010 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_010">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3659"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:02:32.952438Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generalized linear model</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple regression</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multivariate regression</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predictive modeling</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression analysis</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical learning</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised learning</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear model</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear regression analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear regression method</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simple linear regression</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polynomial regression</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regularized linear regression</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gradient descent</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lasso regression</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple linear regression</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multivariate linear regression</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multivariate statistics</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonlinear regression</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ordinary least squares</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regularization</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ridge regression</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>Linear regression</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Linear_regression"/>
+        <skos:editorialNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Need to sort out broad/narrow/related synonyms.</skos:editorialNote>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q10861030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_wp_geo_temporary_011 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_011">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3659"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:02:44.379994Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression analysis</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical learning</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logistic model</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logistic regression model</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regularized logistic regression</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Binary classifier</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gradient descent</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear classifier</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maximum-likelihood estimation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perceptron (artificial neural network)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regularization</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>Logistic regression</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Logistic_regression"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1132755"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_wp_geo_temporary_012 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_012">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3935"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:17:27.076601Z</oboInOwl:creation_date>
+        <rdfs:label>Independent component analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_wp_geo_temporary_013 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_013">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3935"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:17:41.251746Z</oboInOwl:creation_date>
+        <rdfs:label>Non-negative matrix factorization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_wp_geo_temporary_014 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_014">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3935"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T10:03:21.925425Z</oboInOwl:creation_date>
+        <rdfs:label>Factor analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_wp_geo_temporary_015 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_015">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3659"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T15:41:35.868216Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression analysis</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-linear model</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-linear regression</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonlinear model</oboInOwl:hasExactSynonym>
+        <rdfs:label>Nonlinear regression</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nonlinear_regression"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q2755024"/>
     </owl:Class>
     
 
@@ -64341,37 +64482,6 @@ Depositing datasets in public data repositories is an important step in making t
     
 
 
-    <!-- http://edamontology.org/topic_wp_geo_temporary_017 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_009">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2409"/>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-27T10:14:48.086993Z</oboInOwl:creation_date>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data communication</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data migration</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Move or transmit data between locations or devices.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data transmission</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transmission</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>Data synchronisation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym xml:lang="en-us">Data synchronization</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data syncing</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data exchange</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data sharing</oboInOwl:hasRelatedSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data transfer</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_communication"/>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_exchange"/>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_migration"/>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_sharing"/>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_synchronization"/>
-        <skos:broadMatch rdf:resource="https://www.wikidata.org/wiki/Q1932543"/>
-        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q1172338"/>
-        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q5227350"/>
-        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q389772"/>
-        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q1172333"/>
-    </owl:Class>
-    
-
-
     <!-- http://edamontology.org/topic_wp_geo_temporary_018 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_018">
@@ -64812,66 +64922,6 @@ Depositing datasets in public data repositories is an important step in making t
     
 
 
-    <!-- http://edamontology.org/topic_wp_geo_temporary_042 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_010">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3659"/>
-        <skos:editorialNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Need to sort out broad/narrow/related synonyms.</skos:editorialNote>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:02:32.952438Z</oboInOwl:creation_date>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generalized linear model</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple regression</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multivariate regression</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predictive modeling</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression analysis</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical learning</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised learning</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear model</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear regression analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear regression method</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simple linear regression</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polynomial regression</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regularized linear regression</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gradient descent</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lasso regression</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple linear regression</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multivariate linear regression</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multivariate statistics</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonlinear regression</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ordinary least squares</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regularization</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ridge regression</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>Linear regression</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Linear_regression"/>
-        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q10861030"/>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/topic_wp_geo_temporary_043 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_011">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3659"/>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:02:44.379994Z</oboInOwl:creation_date>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression analysis</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical learning</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logistic model</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logistic regression model</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regularized logistic regression</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Binary classifier</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gradient descent</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear classifier</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maximum-likelihood estimation</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perceptron (artificial neural network)</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regularization</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>Logistic regression</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Logistic_regression"/>
-        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1132755"/>
-    </owl:Class>
-    
-
-
     <!-- http://edamontology.org/topic_wp_geo_temporary_044 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_044">
@@ -65031,28 +65081,6 @@ Depositing datasets in public data repositories is an important step in making t
     
 
 
-    <!-- http://edamontology.org/topic_wp_geo_temporary_053 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_012">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3935"/>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:17:27.076601Z</oboInOwl:creation_date>
-        <rdfs:label>Independent component analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/topic_wp_geo_temporary_054 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_013">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3935"/>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:17:41.251746Z</oboInOwl:creation_date>
-        <rdfs:label>Non-negative matrix factorization</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://edamontology.org/topic_wp_geo_temporary_055 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_055">
@@ -65095,17 +65123,6 @@ Depositing datasets in public data repositories is an important step in making t
         <rdfs:label>Discriminative model</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Discriminative_model"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q5282087"/>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/topic_wp_geo_temporary_058 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_014">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3935"/>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T10:03:21.925425Z</oboInOwl:creation_date>
-        <rdfs:label>Factor analysis</rdfs:label>
     </owl:Class>
     
 
@@ -65222,23 +65239,6 @@ Depositing datasets in public data repositories is an important step in making t
         <rdfs:label>Semi-supervised learning</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Semi-Supervised_Learning"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q65044138"/>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/topic_wp_geo_temporary_067 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_015">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3659"/>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T15:41:35.868216Z</oboInOwl:creation_date>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression analysis</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-linear model</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-linear regression</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonlinear model</oboInOwl:hasExactSynonym>
-        <rdfs:label>Nonlinear regression</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nonlinear_regression"/>
-        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q2755024"/>
     </owl:Class>
     
 
@@ -65737,8 +65737,8 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:hasExactSynonym>Panomics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Pan-omics</oboInOwl:hasExactSynonym>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiomics"/>
-        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:hasExactSynonym>Integrative omics</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
     </rdf:Description>
 </rdf:RDF>
 
