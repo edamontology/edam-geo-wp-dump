@@ -12,13 +12,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:oboLegacy="http://purl.obolibrary.org/obo/"
-     xmlns:edamontology="http://edamontology.org#">
-    <owl:Ontology rdf:about="http://edamontology.org">
+     xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://edamontology.org" xml:lang="en">
         <citation rdf:resource="https://doi.org/10.7490/f1000research.1118900.1"/>
         <next_id>4039</next_id>
         <repository rdf:resource="https://github.com/edamontology/edamontology"/>
-        <oboLegacy:date>17.03.2023 17:04 UTC</oboLegacy:date>
+        <oboLegacy:date>17.03.2023 22:16 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -137,6 +136,7 @@
         <oboInOwl:hasRelatedSynonym>Specification</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/properties"/>
         <rdfs:label>Documentation</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     </owl:AnnotationProperty>
     
 
@@ -170,6 +170,7 @@
         <rdfs:comment>N.B.: File extensions that are not correspondigly defined at http://filext.com are recorded in EDAM only if not in conflict with http://filext.com, and/or unique and usual within life-science computing.</rdfs:comment>
         <rdfs:comment>Separated by bar (&apos;|&apos;), without a dot (&apos;.&apos;) prefix, preferrably not all capital characters.</rdfs:comment>
         <rdfs:label>File extension</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     </owl:AnnotationProperty>
     
 
@@ -217,6 +218,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/properties"/>
         <rdfs:comment>&quot;Supported by the given data format&quot; here means, that the given format enables representation of data that satisfies the information standard.</rdfs:comment>
         <rdfs:label>Information standard</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://edamontology.org/related_term"/>
     </owl:AnnotationProperty>
     
 
@@ -262,6 +264,7 @@
         <oboInOwl:hasNarrowSynonym>MIME type</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/properties"/>
         <rdfs:label>Media type</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
     </owl:AnnotationProperty>
     
 
@@ -1294,7 +1297,7 @@
         <notRecommendedForAnnotation>true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>A text token, number or something else which identifies an entity, but which may not be persistent (stable) or unique (the same identifier may identify multiple things).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>ID</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+        <skos:narrowMatch rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/identifiers"/>
@@ -1657,7 +1660,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
         <rdfs:label>Sequence alignment</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Sequence_alignment"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_alignment"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D016415</rdfs:seeAlso>
         <rdfs:seeAlso>http://semanticscience.org/resource/SIO_010066</rdfs:seeAlso>
     </owl:Class>
@@ -2573,7 +2576,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
         <rdfs:comment>Typically, an assembly is a collection of contigs (for example ESTs and genomic DNA fragments) that are ordered, aligned and merged. Annotation of the assembled sequence might be included.</rdfs:comment>
         <rdfs:label>Sequence assembly</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Sequence_assembly"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_assembly"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/data_0925"/>
@@ -14585,7 +14588,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0842"/>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation>true</notRecommendedForAnnotation>
-        <oboInOwl:hasBroadSynonym rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <skos:broadMatch rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <oboInOwl:hasDefinition>A name of a thing, which need not necessarily uniquely identify it.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Symbolic name</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -25864,8 +25867,8 @@
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bianchini</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-06T15:25:28.463042Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document describing the operations that you will be performing to acquire, manage, document, store, share, and preserve your data. This includes budgeting for these operations when required.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_management_plan"/>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q17085509"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management_plan"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q17085509"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DMP</oboInOwl:hasExactSynonym>
         <rdfs:label>Data management plan</rdfs:label>
     </owl:Class>
@@ -25917,7 +25920,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>SMILES</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Simplified_molecular_input_line_entry_specification"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Simplified_molecular_input_line_entry_specification"/>
     </owl:Class>
     
 
@@ -28609,8 +28612,8 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:comment>The main focus in EDAM lies on formats as means of structuring data exchanged between different tools or resources. The serialisation, compression, or encoding of concrete data formats/models is not in scope of EDAM. Format &apos;is format of&apos; Data.</rdfs:comment>
         <rdfs:label>Format</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/File_format"/>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/List_of_file_formats"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/File_format"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/List_of_file_formats"/>
         <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/IAO_0000098&quot;</rdfs:seeAlso>
         <rdfs:seeAlso>&quot;http://purl.org/dc/elements/1.1/format&quot;</rdfs:seeAlso>
         <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#MachineLanguage</rdfs:seeAlso>
@@ -29285,7 +29288,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>Stockholm format</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Stockholm_format"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Stockholm_format"/>
     </owl:Class>
     
 
@@ -33150,6 +33153,8 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
         <created_in>1.2</created_in>
+        <file_extension>ttl</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/turtle"/>
         <oboInOwl:hasDefinition>The Terse RDF Triple Language (Turtle) is a human-friendly serialisation format for RDF (Resource Description Framework) graphs.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
@@ -33198,6 +33203,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
         <created_in>1.2</created_in>
         <file_extension>rdf</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/rdf+xml"/>
         <oboInOwl:hasDefinition>Resource Description Framework (RDF) XML format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
@@ -35423,7 +35429,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="http://www.w3.org/TR/json-ld"/>
         <file_extension>jsonld</file_extension>
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/ld+json"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/ld+json"/>
         <oboInOwl:hasDefinition>JSON-LD, or JavaScript Object Notation for Linked Data, is a method of encoding Linked Data using JSON.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>JavaScript Object Notation for Linked Data</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>jsonld</oboInOwl:hasExactSynonym>
@@ -38430,7 +38435,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/format_webprotege_016">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_webprotege_015"/>
-        <related_term rdf:resource="http://edamontology.org/format_webprotege_003"/>
+        <skos:related rdf:resource="http://edamontology.org/format_webprotege_003"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">melibleq</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-01T02:55:45.473554Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OpenGIS standard used to specify the digital storage of geographical data (point, line, polygon, multi-point, multi-line, etc) with both spatial and non-spatial attributes.</oboInOwl:hasDefinition>
@@ -38698,9 +38703,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:comment>Special cases are: a) An operation that consumes no input (has no input arguments). Such operation is either a constant function, or an operation depending only on the underlying state. b) An operation that may modify the underlying state but has no output. c) The singular-case operation with no input or output, that still may modify the underlying state.</rdfs:comment>
         <rdfs:label>Operation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Subroutine"/>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Function_(computer_science)"/>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Function_(mathematics)"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Subroutine"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Function_(computer_science)"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Function_(mathematics)"/>
         <rdfs:seeAlso>http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method</rdfs:seeAlso>
         <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#Function</rdfs:seeAlso>
         <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000017</rdfs:seeAlso>
@@ -42825,7 +42830,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:label>Restriction site recognition</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://edamontology.org/operation_0575"/>
+        <skos:related rdf:resource="http://edamontology.org/operation_0575"/>
     </owl:Class>
     
 
@@ -45349,7 +45354,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:label>Restriction map drawing</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://edamontology.org/operation_0431"/>
+        <skos:related rdf:resource="http://edamontology.org/operation_0431"/>
     </owl:Class>
     
 
@@ -46821,20 +46826,20 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Text mining</related_term>
-        <oboInOwl:hasBroadSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_access"/>
-        <oboInOwl:hasBroadSynonym rdf:resource="https://en.wikipedia.org/wiki/Information_extraction"/>
-        <oboInOwl:hasBroadSynonym rdf:resource="https://en.wikipedia.org/wiki/Information_retrieval"/>
-        <oboInOwl:hasBroadSynonym rdf:resource="https://www.wikidata.org/wiki/Q1662562"/>
-        <oboInOwl:hasBroadSynonym rdf:resource="https://www.wikidata.org/wiki/Q5227230"/>
-        <oboInOwl:hasBroadSynonym rdf:resource="https://www.wikidata.org/wiki/Q816826"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_access"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_extraction"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_retrieval"/>
+        <skos:broadMatch rdf:resource="https://www.wikidata.org/wiki/Q1662562"/>
+        <skos:broadMatch rdf:resource="https://www.wikidata.org/wiki/Q5227230"/>
+        <skos:broadMatch rdf:resource="https://www.wikidata.org/wiki/Q816826"/>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data access</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information extraction</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information retrieval</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retrieve an entry or part of an entry from a data resource that matches a supplied query. This might include some primary data and annotation. The query is a data identifier or other indexed term. For example: retrieve a sequence record with the specified accession number or matching supplied keywords.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_extraction"/>
-        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_retrieval"/>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q4368942"/>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q5227287"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_extraction"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_retrieval"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q4368942"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q5227287"/>
         <oboInOwl:hasExactSynonym>Data extraction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Retrieval</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Data retrieval (metadata)</oboInOwl:hasNarrowSynonym>
@@ -50483,7 +50488,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Anonymisation</rdfs:label>
         <rdfs:label xml:lang="en-us">Anonymization</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_anonymization"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q17006654"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q17006654"/>
     </owl:Class>
     
 
@@ -50800,7 +50805,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data aggregation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_aggregation"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q16773055"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q16773055"/>
     </owl:Class>
     
 
@@ -51968,8 +51973,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         </rdfs:subClassOf>
         <created_in>1.12</created_in>
         <oboInOwl:hasDefinition>Model a metabolic network.  This can include 1) reconstruction to break down a metabolic pathways into reactions, enzymes, and other relevant information, and compilation of this into a mathematical model and 2) simulations of metabolism based on the model.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="http://edamontology.org/Metabolic%20pathway%20modelling"/>
-        <oboInOwl:hasNarrowSynonym rdf:resource="http://edamontology.org/Metabolic%20pathway%20reconstruction"/>
+        <oboInOwl:hasExactSynonym>Metabolic pathway modelling</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabolic pathway reconstruction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolic network reconstruction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolic network simulation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolic pathway simulation</oboInOwl:hasNarrowSynonym>
@@ -52930,8 +52935,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0306"/>
         <created_in>1.22</created_in>
         <oboInOwl:hasDefinition>Retrieve resources from information systems matching a specific information need.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Information_retrieval"/>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q816826"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_retrieval"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q816826"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:label>Information retrieval</rdfs:label>
@@ -53710,7 +53715,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-02T11:36:14.789196Z</oboInOwl:creation_date>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data compression</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_compression"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2493"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q2493"/>
     </owl:Class>
     
 
@@ -53821,7 +53826,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bianchini</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-06T15:32:37.480761Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A standard for DMPs developed by the Research Data Alliance</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://doi.org/10.25504/FAIRsharing.6e60e5"/>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.6e60e5"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maDMP</oboInOwl:hasExactSynonym>
         <rdfs:label>Machine-actionable DMP</rdfs:label>
     </owl:Class>
@@ -57260,7 +57265,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <rdfs:comment>This includes databases of models and methods to construct or analyse a model.</rdfs:comment>
         <rdfs:label>Systems biology</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Systems_biology"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Systems_biology"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D049490</rdfs:seeAlso>
     </owl:Class>
     
@@ -57287,7 +57292,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/events"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <rdfs:label>Statistics and probability</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Biostatistics"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biostatistics"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Probability"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Statistics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D056808</rdfs:seeAlso>
@@ -58482,8 +58487,8 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>beta13</created_in>
         <oboInOwl:hasDefinition>The acquisition of data, typically measurements of physical systems using any type of sampling system, or by another other means.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q1172399"/>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q4929239"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1172399"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q4929239"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data collecting</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Data collection</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data gathering</oboInOwl:hasExactSynonym>
@@ -58927,8 +58932,8 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <created_in>1.3</created_in>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data sensitivity concerns data that should be protected from disclosure, damage or unauthorised access due to its sensitive nature. This category includes not only personal and commercial data, but also information about e.g. localisation of endangered species.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Data_security</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q1172506"/>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q456632"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q1172506"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q456632"/>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data protection</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information privacy</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special category data</oboInOwl:hasRelatedSynonym>
@@ -59839,7 +59844,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:hasDbXref>VT 1.2.14 Software engineering</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.2.7 Data structures</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The process that leads from an original formulation of a computing problem to executable programs.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q80993"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q80993"/>
         <oboInOwl:hasExactSynonym>Computer programming</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Software development</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Software_engineering</oboInOwl:hasHumanReadableId>
@@ -61555,7 +61560,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
         <created_in>1.10</created_in>
         <oboInOwl:hasDefinition>The control of data entry and maintenance to ensure the data meets defined standards, qualities or constraints.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q872685"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q872685"/>
         <oboInOwl:hasHumanReadableId>Data_governance</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Data stewardship</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -62353,7 +62358,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
         <created_in>1.26</created_in>
         <oboInOwl:hasDefinition>Data rescue denotes digitalisation, formatting, archival, and publication of data that were not available in accessible or usable form. Examples are data from private archives, data inside publications, or in paper records stored privately or publicly.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q29097553"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q29097553"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <rdfs:label>Data rescue</rdfs:label>
@@ -62507,7 +62512,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <rdfs:label>Multiomics</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://edamontology.org/topic_3366"/>
+        <skos:related rdf:resource="http://edamontology.org/topic_3366"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiomics"/>
     </owl:Class>
     
@@ -62644,7 +62649,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earth-like astronomical object?</related_term>
         <related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terrestrial planet?</related_term>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planetary sciences</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q8008"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q8008"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earth sciences</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Having Geosciences also under Astronomy looks of course weird. However, how to connect Planetary sciences &amp; co.?</rdfs:comment>
         <rdfs:label>Geosciences</rdfs:label>
@@ -62771,9 +62776,9 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_011">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3382"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_009"/>
-        <related_term rdf:resource="https://www.wikidata.org/wiki/Q4213"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q4213"/>
         <related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telescope</related_term>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q818557"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q818557"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astronomical imaging?</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Telescopy</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(Or synonym of Astronomy if that is limited to observation, and separated from Astrophysics etc.)</rdfs:comment>
@@ -62882,7 +62887,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_020">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_018"/>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q875686"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q875686"/>
         <rdfs:label>Environmental ethics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Environmental_ethics"/>
     </owl:Class>
@@ -63398,8 +63403,8 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T21:35:16.302722Z</oboInOwl:creation_date>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q11042"/>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q80083"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q11042"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q80083"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Culture and its products (both solutions &amp; problems) versus Cultural studies (=Humanities?, incl.?=? Anthropology?, e.g. Archaeology, Archaeoastronomy): Should they be distinguished, or mixed together? And what with the various sub-disciplines of Anthropology?</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In contrast to the nicely broad definition on English Wikipedia, WikiData definition of https://www.wikidata.org/wiki/Q11042 is narrower in English and many other languages, and non-existent or vague in others. Therefore skos:closeMatch might be the best (narrowMatch unnecessarily explicit?).</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It might be unnecessary to model the concept of Art/Arts between Culture (art is narrower) and Visual art(s) (art is broader)
@@ -63419,7 +63424,7 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T22:01:34.260233Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q36649"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q36649"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visual art</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visual arts</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Visual_arts"/>
@@ -63433,8 +63438,8 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_061"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T22:03:37.588183Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q857780"/>
-        <oboInOwl:hasNarrowSynonym rdf:resource="https://www.wikidata.org/wiki/Q10301381"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q857780"/>
+        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q10301381"/>
         <rdfs:label>Scientific and technical illustration</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Technical_illustration"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Illustration#Technical_and_scientific_illustration"/>
@@ -63449,9 +63454,9 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_062"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T22:05:52.943542Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q17003225"/>
-        <oboInOwl:hasNarrowSynonym rdf:resource="https://www.wikidata.org/wiki/Q3796486"/>
-        <oboInOwl:hasNarrowSynonym rdf:resource="https://www.wikidata.org/wiki/Q6806548"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q17003225"/>
+        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q3796486"/>
+        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q6806548"/>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Botanical illustration</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Medical illustration</oboInOwl:hasNarrowSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological illustration</rdfs:label>
@@ -63469,7 +63474,7 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_065"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T22:37:14.612067Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q4785463"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q4785463"/>
         <rdfs:label>Archaeological illustration</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Archaeological_illustration"/>
     </owl:Class>
@@ -63482,7 +63487,7 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-10T22:47:15.951859Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q23498"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q23498"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archeology</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note: WikiData (not Wikipedia) has an interesting generic concept of &quot;History, heritage, and archeology&quot; https://www.wikidata.org/wiki/Q113077601</rdfs:comment>
         <rdfs:label>Archaeology</rdfs:label>
@@ -63522,7 +63527,7 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_061"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-11T22:45:55.356349Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q191163"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q191163"/>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Landscape painting</oboInOwl:hasNarrowSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In most languages (not EN) and also to a major extent in the en.wikipedia, https://www.wikidata.org/wiki/Q191163 is limited to painting.</rdfs:comment>
         <rdfs:label>Landscape art</rdfs:label>
@@ -63539,7 +63544,7 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amateur astronomy (concept? then rather Citizen astronomy or Enthusiast or similiar)</related_term>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-11T23:06:51.390271Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q280855"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q280855"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rather label Astronomical imaging (aka in en.wikipedia), if that isn&apos;t a synonym of Telescopy = Observational astronomy. (Perhaps even distinguish &quot;purer&quot; photography from heavily computed imaging/visualisation??)</rdfs:comment>
         <rdfs:label>Astrophotography</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Amateur_astronomy"/>
@@ -63555,7 +63560,7 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_060"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-12T12:45:48.016275Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q1026962"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1026962"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computational humanities</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DH</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Humanities computing</oboInOwl:hasExactSynonym>
@@ -63571,7 +63576,7 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-12T13:21:56.944735Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q11023"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q11023"/>
         <rdfs:label>Engineering</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Engineering"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/List_of_engineering_branches"/>
@@ -63591,7 +63596,7 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open design?</related_term>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-12T13:23:15.737553Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q159172"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q159172"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free and open-source hardware (FOSH)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OSH</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open hardware</oboInOwl:hasExactSynonym>
@@ -63612,7 +63617,7 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-12T20:41:43.908927Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q295865"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q295865"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecological goods and services</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecosystem goods</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nature&apos;s services</oboInOwl:hasExactSynonym>
@@ -63629,9 +63634,9 @@ General Anthropology as a narrow synonyms, or needs a separate sub-concept? Or i
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_009"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-12T21:20:08.819819Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q11680018"/>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q4117675"/>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q911801"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q11680018"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q4117675"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q911801"/>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic and molecular astrophysics?</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical cosmology?</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cosmochemistry?</oboInOwl:hasRelatedSynonym>
@@ -63759,13 +63764,13 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
     <owl:Class rdf:about="http://edamontology.org/topic_webprotege_084">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_004"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_020"/>
-        <related_term rdf:resource="https://www.wikidata.org/wiki/Q10302256"/>
-        <related_term rdf:resource="https://www.wikidata.org/wiki/Q2491965"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q10302256"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q2491965"/>
         <related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental injustice</related_term>
         <related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental racism</related_term>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-26T13:34:48.860002Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q1479527"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1479527"/>
         <rdfs:label>Environmental justice</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Environmental_justice"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Environmental_racism"/>
@@ -63861,7 +63866,7 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_019"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-29T13:24:38.200415Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q5532888"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q5532888"/>
         <rdfs:label>Genetic (non)discrimination?</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genetic_discrimination"/>
     </owl:Class>
@@ -64042,7 +64047,7 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_018"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-26T21:30:50.382542Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q920486"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q920486"/>
         <rdfs:label xml:lang="se">Eamiálbmotvuoigatvuođat</rdfs:label>
         <rdfs:label>Indigenous rights</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Indigenous_rights"/>
@@ -64058,7 +64063,7 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_107"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-26T21:40:14.829332Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q1428168"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1428168"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TK</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ancestral knowledge</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">First nations&apos; knowledge</oboInOwl:hasNarrowSynonym>
@@ -64173,7 +64178,7 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_071"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-02T14:06:24.998675Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q43035"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q43035"/>
         <rdfs:label>Electrical engineering</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Electrical_engineering"/>
     </owl:Class>
@@ -64186,7 +64191,7 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_webprotege_071"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-02T14:15:09.276759Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q101333"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q101333"/>
         <rdfs:label>Mechanical engineering</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mechanical_engineering"/>
     </owl:Class>
@@ -64201,9 +64206,9 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_wp_geo_temporary_002"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-02T14:16:19.216887Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q3353193"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q3353193"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy systems engineering</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:resource="https://www.wikidata.org/wiki/Q1803786"/>
+        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q1803786"/>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical energy engineering</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical power engineering</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power engineering</oboInOwl:hasNarrowSynonym>
@@ -64223,7 +64228,7 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_wp_geo_temporary_003"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-02T14:25:12.552808Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q19597073"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q19597073"/>
         <rdfs:label xml:lang="de">Energieinformatik</rdfs:label>
         <rdfs:label>Energy informatics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Energy_informatics"/>
@@ -64329,7 +64334,7 @@ NOTE: E.g. light pollution is not toxic.</rdfs:comment>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data archive or library, often in the form of an online database where datasets are published (deposited) and archived (preserved) with a persistent identifier. 
 
 Depositing datasets in public data repositories is an important step in making the data FAIR (Findable, Accessible, Interoperable and Reusable).</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q17155735"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q17155735"/>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data registry</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research data archiving</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Data repository</rdfs:label>
@@ -64380,24 +64385,24 @@ Depositing datasets in public data repositories is an important step in making t
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2409"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-27T10:14:48.086993Z</oboInOwl:creation_date>
-        <oboInOwl:hasBroadSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_communication"/>
-        <oboInOwl:hasBroadSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_migration"/>
-        <oboInOwl:hasBroadSynonym rdf:resource="https://www.wikidata.org/wiki/Q1932543"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_communication"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_migration"/>
+        <skos:broadMatch rdf:resource="https://www.wikidata.org/wiki/Q1932543"/>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data communication</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data migration</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Move or transmit data between locations or devices.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://www.wikidata.org/wiki/Q389772"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q389772"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data transmission</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transmission</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_synchronization"/>
-        <oboInOwl:hasNarrowSynonym rdf:resource="https://www.wikidata.org/wiki/Q1172333"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_synchronization"/>
+        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q1172333"/>
         <oboInOwl:hasNarrowSynonym>Data synchronisation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym xml:lang="en-us">Data synchronization</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data syncing</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_exchange"/>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_sharing"/>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q1172338"/>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://www.wikidata.org/wiki/Q5227350"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_exchange"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_sharing"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q1172338"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q5227350"/>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data exchange</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data sharing</oboInOwl:hasRelatedSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data transfer</rdfs:label>
@@ -64415,7 +64420,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological molecule</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biomolecule</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biomolecule"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q206229"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q206229"/>
     </owl:Class>
     
 
@@ -64440,7 +64445,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Systems neuroscience</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Neuroscience</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neuroscience"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q207011"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q207011"/>
     </owl:Class>
     
 
@@ -64455,7 +64460,7 @@ Depositing datasets in public data repositories is an important step in making t
         <rdfs:label>Neuroanatomy</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.scholarpedia.org/article/Neuroanatomy"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neuroanatomy"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q948647"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q948647"/>
     </owl:Class>
     
 
@@ -64470,7 +64475,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CNS</oboInOwl:hasExactSynonym>
         <rdfs:label>Central nervous system</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Central_nervous_system"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q47273"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q47273"/>
     </owl:Class>
     
 
@@ -64485,7 +64490,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PNS</oboInOwl:hasExactSynonym>
         <rdfs:label>Peripheral nervous system</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Peripheral_nervous_system"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q169953"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q169953"/>
     </owl:Class>
     
 
@@ -64499,7 +64504,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The study of the functional organization of the nervous system and of the mechanisms underlying these functions.</oboInOwl:hasDefinition>
         <rdfs:label>Neurophysiology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neurophysiology"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q660910"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q660910"/>
     </owl:Class>
     
 
@@ -64511,15 +64516,15 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-27T13:58:56.40552Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The study of neurobiological mechanisms underlying cognition and other higher order brain functions and behaviors, based on methods derived from traditional neuroscience and psychology.</oboInOwl:hasDefinition>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://en.wikipedia.org/wiki/Behavioral_neuroscience"/>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://en.wikipedia.org/wiki/Cognitive_psychology"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Behavioral_neuroscience"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cognitive_psychology"/>
         <oboInOwl:hasRelatedSynonym xml:lang="en-us">Behavioral neuroscience</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Behavioural neuroscience</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cognitive neuropsychology</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cognitive psychology</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Cognitive neuroscience</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cognitive_neuroscience"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q1138951"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1138951"/>
     </owl:Class>
     
 
@@ -64543,7 +64548,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuroethology</oboInOwl:hasRelatedSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavioural neuroscience</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Behavioral_neuroscience"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q846566"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q846566"/>
     </owl:Class>
     
 
@@ -64561,7 +64566,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurodevelopment</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Developmental neuroscience</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Development_of_the_nervous_system"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q1345738"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1345738"/>
     </owl:Class>
     
 
@@ -64580,7 +64585,7 @@ Depositing datasets in public data repositories is an important step in making t
         <rdfs:label>Neuroethology</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.scholarpedia.org/article/Neuroethology"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neuroethology"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q1336265"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1336265"/>
     </owl:Class>
     
 
@@ -64592,13 +64597,13 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-27T14:43:02.583893Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The study of neuroscience using mathematical models and computational simulations.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Neuroinformatics"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neuroinformatics"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematical neuroscience</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuroinformatics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Theoretical neuroscience</oboInOwl:hasExactSynonym>
         <rdfs:label>Computational neuroscience</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_neuroscience"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q8037925"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q8037925"/>
     </owl:Class>
     
 
@@ -64614,7 +64619,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuropharmacology</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Neurochemistry</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neurochemistry"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q786278"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q786278"/>
     </owl:Class>
     
 
@@ -64631,7 +64636,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurochemistry</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Molecular neuroscience</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Molecular_neuroscience"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q6896018"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q6896018"/>
     </owl:Class>
     
 
@@ -64652,7 +64657,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurophysiology</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Systems neuroscience</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Systems_neuroscience"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2617516"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q2617516"/>
     </owl:Class>
     
 
@@ -64667,7 +64672,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuropsychopharmacology</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Neuropharmacology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neuropharmacology"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q3026765"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q3026765"/>
     </owl:Class>
     
 
@@ -64684,7 +64689,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The study of how drug interactions with neural circuits and neurotransmitter systems influence behaviour.</oboInOwl:hasDefinition>
         <rdfs:label>Neuropsychopharmacology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neuropsychopharmacology"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2075049"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q2075049"/>
     </owl:Class>
     
 
@@ -64701,7 +64706,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurology</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Neuroimmunology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neuroimmunology"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2492999"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q2492999"/>
     </owl:Class>
     
 
@@ -64722,7 +64727,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuroendocrine integration</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Neuroendocrinology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neuroendocrinology"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q1335366"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1335366"/>
     </owl:Class>
     
 
@@ -64738,7 +64743,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurophysiology</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Neurophysics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neurophysics"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q3621694"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q3621694"/>
     </owl:Class>
     
 
@@ -64753,7 +64758,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psycholinguistics</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Neurolinguistics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neurolinguistics"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q215948"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q215948"/>
     </owl:Class>
     
 
@@ -64768,7 +64773,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised machine learning</oboInOwl:hasExactSynonym>
         <rdfs:label>Supervised learning</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Supervised_learning"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q334384"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q334384"/>
     </owl:Class>
     
 
@@ -64783,7 +64788,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised machine learning</oboInOwl:hasExactSynonym>
         <rdfs:label>Unsupervised learning</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Unsupervised_learning"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q1152135"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1152135"/>
     </owl:Class>
     
 
@@ -64797,10 +64802,10 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An area of machine learning where an algorithm interacts with an environment to search for suitable actions to maximize a reward. Unlike supervised learning algorithms, which use labeled data for training, reinforcement learning uses a process of trial and error to discover optimal outputs. This process focuses on balancing exploration (testing the effectiveness of new actions) with exploitation (using known actions for a high reward).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single-agent reinforcement learning</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:resource="http://www.scholarpedia.org/article/TD-learning"/>
-        <oboInOwl:hasNarrowSynonym rdf:resource="https://en.wikipedia.org/wiki/Proximal_Policy_Optimization"/>
-        <oboInOwl:hasNarrowSynonym rdf:resource="https://en.wikipedia.org/wiki/Temporal_difference_learning"/>
-        <oboInOwl:hasNarrowSynonym rdf:resource="https://en.wikipedia.org/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action"/>
+        <rdfs:seeAlso rdf:resource="http://www.scholarpedia.org/article/TD-learning"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proximal_Policy_Optimization"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Temporal_difference_learning"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action"/>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep reinforcement learning</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MARL</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model-based reinforcement learning</oboInOwl:hasNarrowSynonym>
@@ -64821,7 +64826,7 @@ Depositing datasets in public data repositories is an important step in making t
         <rdfs:label>Reinforcement learning</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.scholarpedia.org/article/Reinforcement_learning"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reinforcement_learning"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q830687"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q830687"/>
     </owl:Class>
     
 
@@ -64840,7 +64845,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Support vector networks</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Support vector machine</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Support_vector_machine"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q282453"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q282453"/>
     </owl:Class>
     
 
@@ -64876,7 +64881,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ridge regression</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Linear regression</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Linear_regression"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q10861030"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q10861030"/>
     </owl:Class>
     
 
@@ -64900,7 +64905,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regularization</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Logistic regression</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Logistic_regression"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q1132755"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1132755"/>
     </owl:Class>
     
 
@@ -64927,7 +64932,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Randomized trees</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Random forest</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Random_forest"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q245748"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q245748"/>
     </owl:Class>
     
 
@@ -64941,7 +64946,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gradient boosting machine</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gradient boosting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gradient_boosting"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q5591907"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q5591907"/>
     </owl:Class>
     
 
@@ -64960,7 +64965,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proximity search</oboInOwl:hasRelatedSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-nearest neighbours</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q1071612"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1071612"/>
     </owl:Class>
     
 
@@ -64973,7 +64978,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:57:12.595479Z</oboInOwl:creation_date>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generative model</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Generative_model"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q5532625"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q5532625"/>
     </owl:Class>
     
 
@@ -65026,7 +65031,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial neural network</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Artificial_neural_network"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q192776"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q192776"/>
     </owl:Class>
     
 
@@ -65097,7 +65102,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification</oboInOwl:hasExactSynonym>
         <rdfs:label>Statistical classification</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Statistical_classification"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q1744628"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1744628"/>
     </owl:Class>
     
 
@@ -65113,7 +65118,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A model-free, off-policy reinforcement learning algorithm used to find an optimal policy, or state-action mapping, for an environment through iterative updates of the Q-value (state-action pair) used to estimate the expected cumulative reward.</oboInOwl:hasDefinition>
         <rdfs:label>Q-learning</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Q-learning"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2664563"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q2664563"/>
     </owl:Class>
     
 
@@ -65127,7 +65132,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conditional model</oboInOwl:hasExactSynonym>
         <rdfs:label>Discriminative model</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Discriminative_model"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q5282087"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q5282087"/>
     </owl:Class>
     
 
@@ -65151,7 +65156,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T10:03:55.566353Z</oboInOwl:creation_date>
         <rdfs:label>Ensemble learning</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ensemble_learning"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q245652"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q245652"/>
     </owl:Class>
     
 
@@ -65182,7 +65187,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised anomaly detection</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Anomaly detection</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Anomaly_detection"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q3560506"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q3560506"/>
     </owl:Class>
     
 
@@ -65206,7 +65211,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T10:13:54.972292Z</oboInOwl:creation_date>
         <rdfs:label>Linear classifier</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Linear_classifier"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2679259"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q2679259"/>
     </owl:Class>
     
 
@@ -65225,7 +65230,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bayesian probability</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Naive Bayes classifier</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Naive_Bayes_classifier"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q812530"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q812530"/>
     </owl:Class>
     
 
@@ -65254,7 +65259,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weakly supervised learning</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Semi-supervised learning</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Semi-Supervised_Learning"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q65044138"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q65044138"/>
     </owl:Class>
     
 
@@ -65271,7 +65276,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonlinear model</oboInOwl:hasExactSynonym>
         <rdfs:label>Nonlinear regression</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nonlinear_regression"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2755024"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q2755024"/>
     </owl:Class>
     
 
@@ -65286,7 +65291,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bagging</oboInOwl:hasExactSynonym>
         <rdfs:label>Bootstrap aggregating</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Bootstrap_aggregating"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q799897"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q799897"/>
     </owl:Class>
     
 
@@ -65300,7 +65305,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear regression</oboInOwl:hasBroadSynonym>
         <rdfs:label>Boosting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Boosting_(machine_learning)"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q466303"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q466303"/>
     </owl:Class>
     
 
@@ -65321,7 +65326,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi-layer perceptron</oboInOwl:hasExactSynonym>
         <rdfs:label>Multilayer perceptron</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multilayer_perceptron"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q2991667"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q2991667"/>
     </owl:Class>
     
 
@@ -65345,7 +65350,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single-layer perceptron</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Feedforward neural network</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Feedforward_neural_network"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q5441227"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q5441227"/>
     </owl:Class>
     
 
@@ -65422,7 +65427,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stacked autoencoder</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Autoencoder</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Autoencoder"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q786435"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q786435"/>
     </owl:Class>
     
 
@@ -65480,7 +65485,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi-linear unit</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Artificial neuron</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Artificial_neuron"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q177058"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q177058"/>
     </owl:Class>
     
 
@@ -65501,7 +65506,7 @@ Note: the term perceptron is used other ways as a case of an artificial neuron, 
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rosenblatt perceptron model</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perceptron (algorithm)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Perceptron"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q690207"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q690207"/>
     </owl:Class>
     
 
@@ -65553,9 +65558,9 @@ Note: the term perceptron is used other ways as a supervised learning algorithm,
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">McCulloch-Pitts model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>McCulloch-Pitts neurone</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Threshold logic unit</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:resource="https://en.wikipedia.org/wiki/Artificial_neuron"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Artificial_neuron"/>
         <rdfs:label>McCulloch-Pitts neuron</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q997716"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q997716"/>
     </owl:Class>
     
 
@@ -65568,7 +65573,7 @@ Note: the term perceptron is used other ways as a supervised learning algorithm,
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-01T13:14:05.058007Z</oboInOwl:creation_date>
         <rdfs:label>U-Net</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/U-Net"/>
-        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q55636383"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q55636383"/>
     </owl:Class>
     
 
