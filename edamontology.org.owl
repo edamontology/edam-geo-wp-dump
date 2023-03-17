@@ -18,7 +18,7 @@
         <citation rdf:resource="https://doi.org/10.7490/f1000research.1118900.1"/>
         <next_id>4039</next_id>
         <repository rdf:resource="https://github.com/edamontology/edamontology"/>
-        <oboLegacy:date>08.03.2023 23:42 UTC</oboLegacy:date>
+        <oboLegacy:date>17.03.2023 15:18 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -703,23 +703,6 @@
     <!-- http://xmlns.com/foaf/0.1/page -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://edamontology.org/geo -->
-
-    <rdfs:Datatype rdf:about="http://edamontology.org/geo"/>
     
 
 
@@ -24041,7 +24024,7 @@
         <oboInOwl:hasDefinition>A statistical Markov model of a system which is assumed to be a Markov process with unobserved (hidden) states.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1364"/>
-        <rdfs:label xml:lang="en">Hidden Markov model</rdfs:label>
+        <rdfs:label>Hidden Markov model</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
@@ -31458,7 +31441,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:hasExactSynonym>txt</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <oboInOwl:inSubset rdf:datatype="http://edamontology.org/geo"></oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/geo"/>
         <rdfs:comment>Data in text format can be compressed into binary format, or can be a value of an XML element or attribute. Markup formats are not considered textual (or more precisely, not plain-textual).</rdfs:comment>
         <rdfs:label>Textual format</rdfs:label>
         <rdfs:seeAlso>http://filext.com/file-extension/TXT</rdfs:seeAlso>
@@ -31504,7 +31487,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:hasExactSynonym>eXtensible Markup Language</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <oboInOwl:inSubset rdf:datatype="http://edamontology.org/geo"></oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/geo"/>
         <rdfs:comment>Data in XML format can be serialised into text, or binary format.</rdfs:comment>
         <rdfs:label>XML</rdfs:label>
     </owl:Class>
@@ -31520,7 +31503,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:hasDefinition>Binary format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <oboInOwl:inSubset rdf:datatype="http://edamontology.org/geo"></oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/geo"/>
         <rdfs:comment>Only specific native binary formats are listed under &apos;Binary format&apos; in EDAM. Generic binary formats - such as any data being zipped, or any XML data being serialised into the Efficient XML Interchange (EXI) format - are not modelled in EDAM. Refer to http://wsio.org/compression_004.</rdfs:comment>
         <rdfs:label>Binary format</rdfs:label>
     </owl:Class>
@@ -33541,7 +33524,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:hasExactSynonym>JavaScript Object Notation</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <oboInOwl:inSubset rdf:datatype="http://edamontology.org/geo"></oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/geo"/>
         <rdfs:label>JSON</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/JSON"/>
     </owl:Class>
@@ -36280,7 +36263,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graph Modelling Language can be used as a format for diverse graph-like data, such as for example biological networks (including pathways), or semantic knowledge graphs (including linked data).</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not to be confused with the Geography Markup Language (also GML, with the same file extension), or with GraphML.</rdfs:comment>
-        <rdfs:label xml:lang="en-us">GML (Graph Modeling Language)</rdfs:label>
+        <rdfs:label xml:lang="en-US">GML (Graph Modeling Language)</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GML (Graph Modelling Language)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Graph_Modelling_Language"/>
     </owl:Class>
@@ -38213,7 +38196,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_webprotege_002">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_webprotege_001"/>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grid format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:datatype="http://edamontology.org/geo"></oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/geo"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raster format (geographical data)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/GIS_file_formats#Raster"/>
     </owl:Class>
@@ -38224,7 +38207,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/format_webprotege_003">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_webprotege_001"/>
-        <oboInOwl:inSubset rdf:datatype="http://edamontology.org/geo"></oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/geo"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector format (geographical data)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/GIS_file_formats#Vector"/>
     </owl:Class>
@@ -50494,11 +50477,11 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.3</created_in>
         <oboInOwl:hasDefinition>Process data in such a way that makes it hard to trace to the person which the data concerns.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Data anonymisation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en-us">Data anonymization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en-US">Data anonymization</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:label>Anonymisation</rdfs:label>
-        <rdfs:label xml:lang="en-us">Anonymization</rdfs:label>
+        <rdfs:label xml:lang="en-US">Anonymization</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_anonymization"/>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q17006654"/>
     </owl:Class>
@@ -53768,7 +53751,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-02T12:02:42.14696Z</oboInOwl:creation_date>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metadata recording</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Data digitalisation</rdfs:label>
-        <rdfs:label xml:lang="en-us">Data digitalization</rdfs:label>
+        <rdfs:label xml:lang="en-US">Data digitalization</rdfs:label>
     </owl:Class>
     
 
@@ -59746,7 +59729,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <oboInOwl:hasNarrowSynonym>Data architecture</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Data design</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data organisation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym xml:lang="en-us">Data organization</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym xml:lang="en-US">Data organization</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/events"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
@@ -62971,7 +62954,7 @@ Removed for release: created_by, creation_date, skos:editorialNote(s)</rdfs:comm
         <related_term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital twin</related_term>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-05-04T13:32:08.604563Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en-us">Modeling and simulation</rdfs:label>
+        <rdfs:label xml:lang="en-US">Modeling and simulation</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modelling and simulation(?)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Digital_twin"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Model"/>
@@ -64408,8 +64391,8 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transmission</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_synchronization"/>
         <oboInOwl:hasNarrowSynonym rdf:resource="https://www.wikidata.org/wiki/Q1172333"/>
-        <oboInOwl:hasNarrowSynonym xml:lang="en-gb">Data synchronisation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym xml:lang="en-us">Data synchronization</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Data synchronisation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym xml:lang="en-US">Data synchronization</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data syncing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasRelatedSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_exchange"/>
         <oboInOwl:hasRelatedSynonym rdf:resource="https://en.wikipedia.org/wiki/Data_sharing"/>
@@ -64530,8 +64513,8 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The study of neurobiological mechanisms underlying cognition and other higher order brain functions and behaviors, based on methods derived from traditional neuroscience and psychology.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym rdf:resource="https://en.wikipedia.org/wiki/Behavioral_neuroscience"/>
         <oboInOwl:hasRelatedSynonym rdf:resource="https://en.wikipedia.org/wiki/Cognitive_psychology"/>
-        <oboInOwl:hasRelatedSynonym xml:lang="en-us">Behavioral neuroscience</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en-gb">Behavioural neuroscience</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym xml:lang="en-US">Behavioral neuroscience</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Behavioural neuroscience</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cognitive neuropsychology</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cognitive psychology</oboInOwl:hasRelatedSynonym>
         <rdfs:label>Cognitive neuroscience</rdfs:label>
@@ -64549,7 +64532,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-27T14:16:02.360707Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurobiology</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The study of neurobiological mechanisms underlying animal behaviour.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym xml:lang="en-us">Behavioral neuroscience</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en-US">Behavioral neuroscience</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological psychology</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biopsychology</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psychobiology</oboInOwl:hasExactSynonym>
@@ -64971,11 +64954,11 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:04:20.939385Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nonparametric supervised learning algorithm used in classification and regression tasks that finds the k closest training examples in a data set to a given example (where k is a hyperparameter determined by the user and &quot;closest&quot; is determined by a chosen similarity measure) and uses the labels of those examples to predict the label (in classification) or value (in regression) of the test example.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-NN</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en-us">K-nearest neighbors</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en-US">K-nearest neighbors</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KNN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nearest neighbor search (NNS)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proximity search</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en-gb">K-nearest neighbours</rdfs:label>
+        <rdfs:label>K-nearest neighbours</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-nearest neighbours</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm"/>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q1071612"/>
@@ -65428,8 +65411,8 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denoising autoencoder</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-sparse autoencoder</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Overcomplete autoencoder</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym xml:lang="en-gb">Regularised autoencoder</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym xml:lang="en-us">Regularized autoencoder</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Regularised autoencoder</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym xml:lang="en-US">Regularized autoencoder</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAE</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sparse autoencoder</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VAE</oboInOwl:hasNarrowSynonym>
@@ -65486,7 +65469,7 @@ Depositing datasets in public data repositories is an important step in making t
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-01T08:23:46.599094Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mathematical model of a biological neuron used as a building block for artificial neural networks.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym xml:lang="en-gb">Artificial neurone</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Artificial neurone</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial neurons</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formal neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Binary neuron</oboInOwl:hasNarrowSynonym>
@@ -65569,7 +65552,7 @@ Note: the term perceptron is used other ways as a supervised learning algorithm,
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCP neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MP neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">McCulloch-Pitts model</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en-gb">McCulloch-Pitts neurone</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>McCulloch-Pitts neurone</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Threshold logic unit</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym rdf:resource="https://en.wikipedia.org/wiki/Artificial_neuron"/>
         <rdfs:label>McCulloch-Pitts neuron</rdfs:label>
