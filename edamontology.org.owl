@@ -64816,7 +64816,7 @@ Depositing datasets in public data repositories is an important step in making t
 
     <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_010">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3659"/>
-        <skos:editorialNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Need to sort out broad/narrow/related synonyms.</oboInOwl:comment>
+        <skos:editorialNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Need to sort out broad/narrow/related synonyms.</skos:editorialNote>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:02:32.952438Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generalized linear model</oboInOwl:hasBroadSynonym>
