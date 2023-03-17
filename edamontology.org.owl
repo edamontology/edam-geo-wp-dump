@@ -18,7 +18,7 @@
         <citation rdf:resource="https://doi.org/10.7490/f1000research.1118900.1"/>
         <next_id>4039</next_id>
         <repository rdf:resource="https://github.com/edamontology/edamontology"/>
-        <oboLegacy:date>17.03.2023 23:07 UTC</oboLegacy:date>
+        <oboLegacy:date>17.03.2023 23:24 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -53775,7 +53775,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <!-- http://edamontology.org/operation_wp_geo_temporary_009 -->
 
-    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_009">
+    <owl:Class rdf:about="http://edamontology.org/data_wp_geo_temporary_002">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_wp_geo_temporary_001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -64343,7 +64343,7 @@ Depositing datasets in public data repositories is an important step in making t
 
     <!-- http://edamontology.org/topic_wp_geo_temporary_017 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_017">
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_009">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2409"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-27T10:14:48.086993Z</oboInOwl:creation_date>
@@ -64814,9 +64814,9 @@ Depositing datasets in public data repositories is an important step in making t
 
     <!-- http://edamontology.org/topic_wp_geo_temporary_042 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_042">
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_010">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3659"/>
-        <oboInOwl:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Need to sort out broad/narrow/related synonyms.</oboInOwl:comment>
+        <skos:editorialNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Need to sort out broad/narrow/related synonyms.</oboInOwl:comment>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:02:32.952438Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generalized linear model</oboInOwl:hasBroadSynonym>
@@ -64850,7 +64850,7 @@ Depositing datasets in public data repositories is an important step in making t
 
     <!-- http://edamontology.org/topic_wp_geo_temporary_043 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_043">
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_011">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3659"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:02:44.379994Z</oboInOwl:creation_date>
@@ -65033,7 +65033,7 @@ Depositing datasets in public data repositories is an important step in making t
 
     <!-- http://edamontology.org/topic_wp_geo_temporary_053 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_053">
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_012">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3935"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:17:27.076601Z</oboInOwl:creation_date>
@@ -65044,7 +65044,7 @@ Depositing datasets in public data repositories is an important step in making t
 
     <!-- http://edamontology.org/topic_wp_geo_temporary_054 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_054">
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_013">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3935"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T09:17:41.251746Z</oboInOwl:creation_date>
@@ -65101,7 +65101,7 @@ Depositing datasets in public data repositories is an important step in making t
 
     <!-- http://edamontology.org/topic_wp_geo_temporary_058 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_058">
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_014">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3935"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T10:03:21.925425Z</oboInOwl:creation_date>
@@ -65228,7 +65228,7 @@ Depositing datasets in public data repositories is an important step in making t
 
     <!-- http://edamontology.org/topic_wp_geo_temporary_067 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_wp_geo_temporary_067">
+    <owl:Class rdf:about="http://edamontology.org/operation_wp_geo_temporary_015">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3659"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erin.calhoun</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-02-28T15:41:35.868216Z</oboInOwl:creation_date>
