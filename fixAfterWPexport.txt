@@ -1,6 +1,6 @@
-- remove all rdf:datatype except boolean
+- remove all rdf:datatype except boolean--always all added by WP🙄
 - add lang=de where de.wikipedia (and similar)--looks like WebProtégé ignores, but keeps it if untouched👍🏽
 - maybe move saved-by up?
-- ideally also remove edamontology: nonsense namespace
-- xxxMatch properties need to be removed or changed to proper
-- maybe strip of all non-EDAM (and non-legacy) properties?--could maybe auto-export afterwards as an inflated format with a lot of stuff, up-to-date (incl. WikiData etc.), too?💡
+- ideally also remove edamontology: nonsense namespace--always added by WP🙄
+- xxxMatch properties need to be removed or changed to proper (note: media_type is now a subproperty of exactMatch👈🏽)
+- maybe strip off all non-EDAM (and non-legacy) properties?--could maybe auto-export afterwards as an inflated format with a lot of stuff, up-to-date (incl. WikiData etc.), too?💡
